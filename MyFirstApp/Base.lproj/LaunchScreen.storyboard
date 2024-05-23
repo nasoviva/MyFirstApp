@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,16 +12,45 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-vh-rb1">
+                                <rect key="frame" x="5" y="0.0" width="409" height="896"/>
+                                <color key="backgroundColor" name="Color 3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="World" translatesAutoresizingMaskIntoConstraints="NO" id="H5j-yz-MEP" userLabel="World">
+                                <rect key="frame" x="132.66666666666666" y="-192" width="148.99999999999997" height="1280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="94N-TJ-Jus"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.98039215690000003" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.5568627451" green="0.24313725489999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OxW-vh-rb1" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="1Qv-ta-cx1"/>
+                            <constraint firstItem="H5j-yz-MEP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2br-hw-d19"/>
+                            <constraint firstItem="OxW-vh-rb1" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="2mO-dt-GyX"/>
+                            <constraint firstItem="H5j-yz-MEP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DK1-gg-Bnn"/>
+                            <constraint firstItem="H5j-yz-MEP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="K6A-Zb-9UC"/>
+                            <constraint firstItem="H5j-yz-MEP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SOv-DN-fjm"/>
+                            <constraint firstItem="OxW-vh-rb1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="5" id="ULq-jS-2p7"/>
+                            <constraint firstItem="OxW-vh-rb1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xiE-KX-C07"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.625" y="372.88732394366195"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="World" width="1280" height="1280"/>
+        <namedColor name="Color 3">
+            <color red="0.9649999737739563" green="0.98000001907348633" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
